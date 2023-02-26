@@ -16,7 +16,7 @@ const Admin = require('./models/Admin')
 const app = express()
 const server = http.createServer(app)
 const io = socketio(server)
-const port = process.env.PORT
+const port = 8080
 
 app.post('/', async (req,res) => {
     res.send('done')
